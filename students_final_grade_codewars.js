@@ -23,6 +23,9 @@ finalGrade(55, 0);    // 0
 finalGrade(20, 2);    // 0
 */
 
-function finalGrade (exam, projects) {
-  return // final grade
+const finalGrade = (exam, projects) => {
+  return exam > 90 || projects > 10 ? 100
+         : exam > 75 && projects > 4 ? 90
+         : exam > 50 && projects > 1 ? 75
+         : 0;
 }
